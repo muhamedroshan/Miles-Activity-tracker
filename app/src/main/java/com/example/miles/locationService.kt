@@ -1,9 +1,6 @@
-package com.example.ceikli
+package com.example.miles
 
 import android.Manifest
-import android.app.Activity
-import android.app.Application
-import android.app.Notification
 import android.app.NotificationManager
 import android.app.Service
 import android.content.Context
@@ -15,13 +12,11 @@ import android.location.LocationManager
 import android.os.Bundle
 import android.os.Handler
 import android.os.IBinder
-import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
-import androidx.core.content.ContextCompat
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStore
 import androidx.lifecycle.ViewModelStoreOwner
+
 import kotlinx.coroutines.*
 import kotlinx.coroutines.Runnable
 import java.util.*
@@ -107,7 +102,7 @@ class locationService: Service(), ViewModelStoreOwner {
                         val prevLocation: Location = ViewModel.currentLocation.value!!
                         val curntLocation = location
                         val distance =
-                            (ViewModel.distance.value ?: 0f) + curntLocation.distanceTo(prevLocation)
+                            (ViewModel.distance.value ?: 0) + curntLocation.distanceTo(prevLocation)
                         val speed = curntLocation.speed
                         ViewModel.updateSpeed(speed)
                         ViewModel.updateDistance(distance)

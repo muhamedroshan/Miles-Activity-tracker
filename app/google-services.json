@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "413585641663",
+    "project_id": "miles-1d5e4",
+    "storage_bucket": "miles-1d5e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413585641663:android:ac16699ae8fc884295b60a",
+        "android_client_info": {
+          "package_name": "com.example.miles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413585641663-qchvelvvb9rroalgo3i0jj84qkss18or.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYtFV_4nFuqXSC1z3hTCUpRSIyb7fbc6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413585641663-qchvelvvb9rroalgo3i0jj84qkss18or.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

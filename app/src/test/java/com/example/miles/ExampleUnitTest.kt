@@ -1,4 +1,4 @@
-package com.example.ceikli
+package com.example.miles
 
 import org.junit.Test
 

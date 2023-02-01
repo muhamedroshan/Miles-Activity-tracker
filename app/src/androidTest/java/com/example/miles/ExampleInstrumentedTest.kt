@@ -1,4 +1,4 @@
-package com.example.ceikli
+package com.example.miles
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

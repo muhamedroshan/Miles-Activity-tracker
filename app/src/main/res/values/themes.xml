@@ -22,4 +22,7 @@
         <item name="cardCornerRadius">20dp</item>
         <item name="android:layout_margin">15dp</item>
     </style>
+    <style name="CardViewStyle2">
+        <item name="android:backgroundTint">?attr/colorPrimary</item>
+    </style>
 </resources>

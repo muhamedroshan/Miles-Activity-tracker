@@ -1,4 +1,4 @@
-package com.example.ceikli
+package com.example.miles
 
 import android.app.Application
 import android.app.NotificationChannel
@@ -7,6 +7,9 @@ import android.content.Context
 import android.os.Build
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStore
+import com.example.miles.data.ItemRoomDatabase
+
+
 
 class LocationApp: Application() {
     val appViewModel = ViewModelProvider( ViewModelStore() ,ViewModelProvider.AndroidViewModelFactory(this)).get(ceikliViewModel::class.java)
@@ -22,4 +25,6 @@ class LocationApp: Application() {
             notificationManager.createNotificationChannel(channel)
         }
     }
+
+    val database: ItemRoomDatabase by lazy { ItemRoomDatabase.getDatabase(this) }
 }
